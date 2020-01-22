@@ -1,0 +1,470 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3C09399423D818F9008C2787 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C09399323D818F9008C2787 /* AppDelegate.swift */; };
+		3C09399623D818F9008C2787 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C09399523D818F9008C2787 /* SceneDelegate.swift */; };
+		3C09399823D818F9008C2787 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C09399723D818F9008C2787 /* ViewController.swift */; };
+		3C09399B23D818F9008C2787 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3C09399923D818F9008C2787 /* Main.storyboard */; };
+		3C09399D23D818FE008C2787 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3C09399C23D818FE008C2787 /* Assets.xcassets */; };
+		3C0939A023D818FE008C2787 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3C09399E23D818FE008C2787 /* LaunchScreen.storyboard */; };
+		3C0939AB23D818FE008C2787 /* MarsplayTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C0939AA23D818FE008C2787 /* MarsplayTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		3C0939A723D818FE008C2787 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3C09398823D818F8008C2787 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3C09398F23D818F8008C2787;
+			remoteInfo = Marsplay;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		3C09399023D818F9008C2787 /* Marsplay.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Marsplay.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		3C09399323D818F9008C2787 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		3C09399523D818F9008C2787 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		3C09399723D818F9008C2787 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		3C09399A23D818F9008C2787 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		3C09399C23D818FE008C2787 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		3C09399F23D818FE008C2787 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		3C0939A123D818FE008C2787 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3C0939A623D818FE008C2787 /* MarsplayTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MarsplayTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		3C0939AA23D818FE008C2787 /* MarsplayTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarsplayTests.swift; sourceTree = "<group>"; };
+		3C0939AC23D818FE008C2787 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3C09398D23D818F8008C2787 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3C0939A323D818FE008C2787 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3C09398723D818F8008C2787 = {
+			isa = PBXGroup;
+			children = (
+				3C09399223D818F9008C2787 /* Marsplay */,
+				3C0939A923D818FE008C2787 /* MarsplayTests */,
+				3C09399123D818F9008C2787 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		3C09399123D818F9008C2787 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3C09399023D818F9008C2787 /* Marsplay.app */,
+				3C0939A623D818FE008C2787 /* MarsplayTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3C09399223D818F9008C2787 /* Marsplay */ = {
+			isa = PBXGroup;
+			children = (
+				3C09399323D818F9008C2787 /* AppDelegate.swift */,
+				3C09399523D818F9008C2787 /* SceneDelegate.swift */,
+				3C09399723D818F9008C2787 /* ViewController.swift */,
+				3C09399923D818F9008C2787 /* Main.storyboard */,
+				3C09399C23D818FE008C2787 /* Assets.xcassets */,
+				3C09399E23D818FE008C2787 /* LaunchScreen.storyboard */,
+				3C0939A123D818FE008C2787 /* Info.plist */,
+			);
+			path = Marsplay;
+			sourceTree = "<group>";
+		};
+		3C0939A923D818FE008C2787 /* MarsplayTests */ = {
+			isa = PBXGroup;
+			children = (
+				3C0939AA23D818FE008C2787 /* MarsplayTests.swift */,
+				3C0939AC23D818FE008C2787 /* Info.plist */,
+			);
+			path = MarsplayTests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		3C09398F23D818F8008C2787 /* Marsplay */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3C0939AF23D818FE008C2787 /* Build configuration list for PBXNativeTarget "Marsplay" */;
+			buildPhases = (
+				3C09398C23D818F8008C2787 /* Sources */,
+				3C09398D23D818F8008C2787 /* Frameworks */,
+				3C09398E23D818F8008C2787 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Marsplay;
+			productName = Marsplay;
+			productReference = 3C09399023D818F9008C2787 /* Marsplay.app */;
+			productType = "com.apple.product-type.application";
+		};
+		3C0939A523D818FE008C2787 /* MarsplayTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3C0939B223D818FE008C2787 /* Build configuration list for PBXNativeTarget "MarsplayTests" */;
+			buildPhases = (
+				3C0939A223D818FE008C2787 /* Sources */,
+				3C0939A323D818FE008C2787 /* Frameworks */,
+				3C0939A423D818FE008C2787 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3C0939A823D818FE008C2787 /* PBXTargetDependency */,
+			);
+			name = MarsplayTests;
+			productName = MarsplayTests;
+			productReference = 3C0939A623D818FE008C2787 /* MarsplayTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		3C09398823D818F8008C2787 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1120;
+				LastUpgradeCheck = 1120;
+				ORGANIZATIONNAME = "Amol Prakash";
+				TargetAttributes = {
+					3C09398F23D818F8008C2787 = {
+						CreatedOnToolsVersion = 11.2.1;
+					};
+					3C0939A523D818FE008C2787 = {
+						CreatedOnToolsVersion = 11.2.1;
+						TestTargetID = 3C09398F23D818F8008C2787;
+					};
+				};
+			};
+			buildConfigurationList = 3C09398B23D818F8008C2787 /* Build configuration list for PBXProject "Marsplay" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 3C09398723D818F8008C2787;
+			productRefGroup = 3C09399123D818F9008C2787 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3C09398F23D818F8008C2787 /* Marsplay */,
+				3C0939A523D818FE008C2787 /* MarsplayTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3C09398E23D818F8008C2787 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3C0939A023D818FE008C2787 /* LaunchScreen.storyboard in Resources */,
+				3C09399D23D818FE008C2787 /* Assets.xcassets in Resources */,
+				3C09399B23D818F9008C2787 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3C0939A423D818FE008C2787 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3C09398C23D818F8008C2787 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3C09399823D818F9008C2787 /* ViewController.swift in Sources */,
+				3C09399423D818F9008C2787 /* AppDelegate.swift in Sources */,
+				3C09399623D818F9008C2787 /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3C0939A223D818FE008C2787 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3C0939AB23D818FE008C2787 /* MarsplayTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		3C0939A823D818FE008C2787 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3C09398F23D818F8008C2787 /* Marsplay */;
+			targetProxy = 3C0939A723D818FE008C2787 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		3C09399923D818F9008C2787 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3C09399A23D818F9008C2787 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		3C09399E23D818FE008C2787 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3C09399F23D818FE008C2787 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		3C0939AD23D818FE008C2787 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		3C0939AE23D818FE008C2787 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		3C0939B023D818FE008C2787 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = Marsplay/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = amolprakash.Marsplay;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		3C0939B123D818FE008C2787 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = Marsplay/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = amolprakash.Marsplay;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		3C0939B323D818FE008C2787 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = MarsplayTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = amolprakash.MarsplayTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Marsplay.app/Marsplay";
+			};
+			name = Debug;
+		};
+		3C0939B423D818FE008C2787 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = MarsplayTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = amolprakash.MarsplayTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Marsplay.app/Marsplay";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3C09398B23D818F8008C2787 /* Build configuration list for PBXProject "Marsplay" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3C0939AD23D818FE008C2787 /* Debug */,
+				3C0939AE23D818FE008C2787 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3C0939AF23D818FE008C2787 /* Build configuration list for PBXNativeTarget "Marsplay" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3C0939B023D818FE008C2787 /* Debug */,
+				3C0939B123D818FE008C2787 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3C0939B223D818FE008C2787 /* Build configuration list for PBXNativeTarget "MarsplayTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3C0939B323D818FE008C2787 /* Debug */,
+				3C0939B423D818FE008C2787 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 3C09398823D818F8008C2787 /* Project object */;
+}
