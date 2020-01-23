@@ -12,7 +12,7 @@ import Foundation
 protocol MovieListViewProtocol: AnyObject {
     var presenter: MovieListPresenterProtocol? { get set }
     
-    func loadingFinished()
+    func loadingFinished(with indicies: [IndexPath])
     func hideActivity()
     func showActivity()
 }
@@ -21,7 +21,7 @@ protocol MovieListViewProtocol: AnyObject {
 protocol MovieListPresenterProtocol: AnyObject {
     var view: MovieListViewProtocol? { get set }
     var interactor: MovieListInteractorInputProtocol? { get set }
-    var router: MovieListInteractorInputProtocol? { get set }
+    var router: MovieListRouterProtocol? { get set }
     
     func viewDidLoad()
     func getMovies()
@@ -33,7 +33,6 @@ protocol MovieListPresenterProtocol: AnyObject {
 protocol MovieListInteractorInputProtocol: AnyObject {
     var presenter: MovieListInteractorOutputProtocol? { get set }
     var fetcher: MovieListFetcherInputProtocol? { get set }
-    var response: MoviesResponse<Movies>? { get set }
     
     func getMoviesListFor(page: Int)
     
@@ -41,18 +40,20 @@ protocol MovieListInteractorInputProtocol: AnyObject {
 
 // Interactor to Presenter
 protocol MovieListInteractorOutputProtocol: AnyObject {
-    func didFetch<T: Decodable>(movies: T)
+    func didFetch(response: MoviesResponse<Movies>)
+    func failedWith(error: MarsplayError?)
 }
 
 // Interactor to Fetcher
 protocol MovieListFetcherInputProtocol: AnyObject {
-    var interactor: MovieListFetcherOutProtocol? { get set }
+    var interactor: MovieListFetcherOutputProtocol? { get set }
     func getMovies(for searchString: String, page: Int)
 }
 
 // Fetcher to Interactor
-protocol MovieListFetcherOutProtocol: AnyObject {
-    func didFetchMovies<T: Decodable>(response: T)
+protocol MovieListFetcherOutputProtocol: AnyObject {
+    func didFetchMovies(response: MoviesResponse<Movies>)
+    func failedWith(error: MarsplayError?)
 }
 
 // Presenter to Router

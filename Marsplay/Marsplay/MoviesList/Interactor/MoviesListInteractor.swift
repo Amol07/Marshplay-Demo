@@ -12,16 +12,19 @@ class MoviesListInteractor: MovieListInteractorInputProtocol {
     
     weak var presenter: MovieListInteractorOutputProtocol?
     var fetcher: MovieListFetcherInputProtocol?
-    var response: MoviesResponse<Movies>?
     
     func getMoviesListFor(page: Int) {
         self.fetcher?.getMovies(for: "Batman", page: page)
     }
-    
 }
 
-extension MoviesListInteractor: MovieListFetcherOutProtocol {
-    func didFetchMovies<T: Decodable>(response: T) {
-        
+extension MoviesListInteractor: MovieListFetcherOutputProtocol {
+    
+    func failedWith(error: MarsplayError?) {
+        self.presenter?.failedWith(error: error)
+    }
+    
+    func didFetchMovies(response: MoviesResponse<Movies>) {
+        self.presenter?.didFetch(response: response)
     }
 }

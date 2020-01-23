@@ -20,8 +20,10 @@
 		3C0939C423D82327008C2787 /* Movies.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C0939C323D82327008C2787 /* Movies.swift */; };
 		3C0939C623D8235D008C2787 /* MoviesListRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C0939C523D8235D008C2787 /* MoviesListRouter.swift */; };
 		3C0939C823D8237B008C2787 /* MovieListProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C0939C723D8237B008C2787 /* MovieListProtocols.swift */; };
-		3C0939CB23D83165008C2787 /* MovieListFetcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C0939CA23D83165008C2787 /* MovieListFetcher.swift */; };
+		3C0939CB23D83165008C2787 /* MoviesListFetcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C0939CA23D83165008C2787 /* MoviesListFetcher.swift */; };
 		3C0939CF23D96554008C2787 /* MarsplayError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C0939CE23D96554008C2787 /* MarsplayError.swift */; };
+		3C0939D223D966CD008C2787 /* ApiClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C0939D123D966CD008C2787 /* ApiClient.swift */; };
+		3C0939D423D968C3008C2787 /* Reachability.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C0939D323D968C3008C2787 /* Reachability.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,8 +54,10 @@
 		3C0939C323D82327008C2787 /* Movies.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Movies.swift; sourceTree = "<group>"; };
 		3C0939C523D8235D008C2787 /* MoviesListRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoviesListRouter.swift; sourceTree = "<group>"; };
 		3C0939C723D8237B008C2787 /* MovieListProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieListProtocols.swift; sourceTree = "<group>"; };
-		3C0939CA23D83165008C2787 /* MovieListFetcher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieListFetcher.swift; sourceTree = "<group>"; };
+		3C0939CA23D83165008C2787 /* MoviesListFetcher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoviesListFetcher.swift; sourceTree = "<group>"; };
 		3C0939CE23D96554008C2787 /* MarsplayError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarsplayError.swift; sourceTree = "<group>"; };
+		3C0939D123D966CD008C2787 /* ApiClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiClient.swift; sourceTree = "<group>"; };
+		3C0939D323D968C3008C2787 /* Reachability.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Reachability.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -182,7 +186,7 @@
 		3C0939C923D82E60008C2787 /* Fetcher */ = {
 			isa = PBXGroup;
 			children = (
-				3C0939CA23D83165008C2787 /* MovieListFetcher.swift */,
+				3C0939CA23D83165008C2787 /* MoviesListFetcher.swift */,
 			);
 			path = Fetcher;
 			sourceTree = "<group>";
@@ -207,6 +211,8 @@
 		3C0939D023D965AE008C2787 /* APICLient */ = {
 			isa = PBXGroup;
 			children = (
+				3C0939D123D966CD008C2787 /* ApiClient.swift */,
+				3C0939D323D968C3008C2787 /* Reachability.swift */,
 			);
 			path = APICLient;
 			sourceTree = "<group>";
@@ -314,7 +320,7 @@
 			files = (
 				3C0939C423D82327008C2787 /* Movies.swift in Sources */,
 				3C0939C623D8235D008C2787 /* MoviesListRouter.swift in Sources */,
-				3C0939CB23D83165008C2787 /* MovieListFetcher.swift in Sources */,
+				3C0939CB23D83165008C2787 /* MoviesListFetcher.swift in Sources */,
 				3C09399823D818F9008C2787 /* ViewController.swift in Sources */,
 				3C09399423D818F9008C2787 /* AppDelegate.swift in Sources */,
 				3C09399623D818F9008C2787 /* SceneDelegate.swift in Sources */,
@@ -323,6 +329,8 @@
 				3C0939C823D8237B008C2787 /* MovieListProtocols.swift in Sources */,
 				3C0939CF23D96554008C2787 /* MarsplayError.swift in Sources */,
 				3C0939C223D82317008C2787 /* MoviesListPresenter.swift in Sources */,
+				3C0939D223D966CD008C2787 /* ApiClient.swift in Sources */,
+				3C0939D423D968C3008C2787 /* Reachability.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

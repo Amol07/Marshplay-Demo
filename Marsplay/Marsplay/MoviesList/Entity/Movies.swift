@@ -32,7 +32,7 @@ class Movies: Decodable {
 
 class MoviesResponse<T:Decodable>: Decodable {
     var result: [T]?
-    var totalResults: Int = 0
+    var totalResults: String?
     var response: String?
     
     private enum CodingKeys: String, CodingKey {
@@ -46,5 +46,12 @@ class MoviesResponse<T:Decodable>: Decodable {
             return false
         }
         return success
+    }
+    
+    var totalCount: Int {
+        guard let total = self.totalResults else {
+            return 0
+        }
+        return Int(total) ?? 0
     }
 }

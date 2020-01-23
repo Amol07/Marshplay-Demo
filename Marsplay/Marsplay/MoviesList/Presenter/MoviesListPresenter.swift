@@ -8,24 +8,28 @@
 
 import Foundation
 
+struct PageInfo {
+    var isNextAvailable = true
+    var currentPage = 1
+    var isApiCallInProgress = false
+}
+
 class MoviesListPresenter: MovieListPresenterProtocol {
     
     weak var view: MovieListViewProtocol?
     var interactor: MovieListInteractorInputProtocol?
-    var router: MovieListInteractorInputProtocol?
+    var router: MovieListRouterProtocol?
      
     private var moviesList: [Movies] = [Movies]()
-    private var isNextPageAvailable: Bool = false
-    private var isNextPageCallInProgress: Bool = false
-    private var currentPage: Int = 1
+    private var pageInfo = PageInfo()
     
     func viewDidLoad() {
         self.getMovies()
     }
     
     func getMovies() {
-        guard let resultCount = self.interactor?.response?.result?.count, self.moviesList.count < resultCount else { return }
-        self.interactor?.getMoviesListFor(page: self.currentPage)
+        guard !self.pageInfo.isApiCallInProgress, self.pageInfo.isNextAvailable else { return }
+        self.interactor?.getMoviesListFor(page: self.pageInfo.currentPage)
     }
     
     func numberOfItemsIn(section: Int) -> Int {
@@ -38,18 +42,25 @@ class MoviesListPresenter: MovieListPresenterProtocol {
 }
 
 extension MoviesListPresenter: MovieListInteractorOutputProtocol {
-    func didFetch<T>(movies: T) where T : Decodable {
+    
+    func didFetch(response: MoviesResponse<Movies>) {
         
-    }
-    
-    
-    func didFetch(movies: [Movies]) {
-        guard movies.count > 0 else {
+        guard response.isSuccessResponse, let movies = response.result, movies.count > 0 else {
+            self.pageInfo.isNextAvailable = false
             return
         }
-        // let startIndex = self.moviesList.count
+        self.pageInfo.isApiCallInProgress = false
+        self.pageInfo.currentPage = self.pageInfo.currentPage + 1
+        self.pageInfo.isNextAvailable = self.moviesList.count < response.totalCount
+        
+        let startIndex = self.moviesList.count
         self.moviesList.append(contentsOf: movies)
-        // let endIndex = self.moviesList.count - 1
-        self.view?.loadingFinished()
+        let endIndex = self.moviesList.count - 1
+        let indicies = Array(startIndex...endIndex).map { IndexPath(item: $0, section: 0) }
+        self.view?.loadingFinished(with: indicies)
+    }
+    
+    func failedWith(error: MarsplayError?) {
+        
     }
 }
