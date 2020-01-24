@@ -15,7 +15,12 @@ class MoviesListViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.registerCells()
         self.presenter?.viewDidLoad()
+    }
+    
+    private func registerCells() {
+        self.collectionView.register(cellType: MovieListCollectionViewCell.self)
     }
 }
 
@@ -26,7 +31,10 @@ extension MoviesListViewController: UICollectionViewDataSource {
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        UICollectionViewCell()
+        let cell = collectionView.dequeueReusableCell(for: indexPath, cellType: MovieListCollectionViewCell.self)
+        guard let presenter = self.presenter else { return cell }
+        cell.configureCell(withMovie: presenter.getItemAt(indexPath: indexPath))
+        return cell
     }
 }
 

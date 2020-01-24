@@ -14,7 +14,9 @@ enum MovieType: String, Decodable {
     case episode
 }
 
-class Movies: Decodable {
+class Movie: Decodable {
+    private static let dateFormat = DateFormatter()
+    
     var title: String?
     var year: String?
     var imdbID: String?
@@ -27,6 +29,19 @@ class Movies: Decodable {
         case imdbID
         case type = "Type"
         case poster = "Poster"
+    }
+    private(set) var formattedDateString: String?
+    var yearsAgo: String? {
+        guard formattedDateString != nil else {
+            Movie.dateFormat.dateFormat = "yyyy"
+            if let year = self.year, let date = Movie.dateFormat.date(from: year) {
+                self.formattedDateString = date.timeAgo(since: date)
+            } else {
+                self.formattedDateString = self.year
+            }
+            return self.formattedDateString
+        }
+        return self.formattedDateString
     }
 }
 

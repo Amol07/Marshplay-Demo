@@ -24,7 +24,7 @@ extension MoviesListInteractor: MovieListFetcherOutputProtocol {
         self.presenter?.failedWith(error: error)
     }
     
-    func didFetchMovies(response: MoviesResponse<Movies>) {
+    func didFetchMovies(response: MoviesResponse<Movie>) {
         self.presenter?.didFetch(response: response)
     }
 }

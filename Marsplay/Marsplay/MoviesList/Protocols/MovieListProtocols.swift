@@ -26,6 +26,7 @@ protocol MovieListPresenterProtocol: AnyObject {
     func viewDidLoad()
     func getMovies()
     func numberOfItemsIn(section: Int) -> Int
+    func getItemAt(indexPath: IndexPath) -> Movie
     func selectedItemAt(indexpath: IndexPath)
 }
 
@@ -40,7 +41,7 @@ protocol MovieListInteractorInputProtocol: AnyObject {
 
 // Interactor to Presenter
 protocol MovieListInteractorOutputProtocol: AnyObject {
-    func didFetch(response: MoviesResponse<Movies>)
+    func didFetch(response: MoviesResponse<Movie>)
     func failedWith(error: MarsplayError?)
 }
 
@@ -52,7 +53,7 @@ protocol MovieListFetcherInputProtocol: AnyObject {
 
 // Fetcher to Interactor
 protocol MovieListFetcherOutputProtocol: AnyObject {
-    func didFetchMovies(response: MoviesResponse<Movies>)
+    func didFetchMovies(response: MoviesResponse<Movie>)
     func failedWith(error: MarsplayError?)
 }
 

@@ -20,7 +20,7 @@ class MoviesListPresenter: MovieListPresenterProtocol {
     var interactor: MovieListInteractorInputProtocol?
     var router: MovieListRouterProtocol?
      
-    private var moviesList: [Movies] = [Movies]()
+    private var moviesList: [Movie] = [Movie]()
     private var pageInfo = PageInfo()
     
     func viewDidLoad() {
@@ -36,6 +36,10 @@ class MoviesListPresenter: MovieListPresenterProtocol {
         return self.moviesList.count
     }
     
+    func getItemAt(indexPath: IndexPath) -> Movie {
+        return self.moviesList[indexPath.item]
+    }
+    
     func selectedItemAt(indexpath: IndexPath) {
         //let movies = self.moviesList[indexpath.item]
     }
@@ -43,7 +47,7 @@ class MoviesListPresenter: MovieListPresenterProtocol {
 
 extension MoviesListPresenter: MovieListInteractorOutputProtocol {
     
-    func didFetch(response: MoviesResponse<Movies>) {
+    func didFetch(response: MoviesResponse<Movie>) {
         
         guard response.isSuccessResponse, let movies = response.result, movies.count > 0 else {
             self.pageInfo.isNextAvailable = false
