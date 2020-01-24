@@ -13,7 +13,7 @@ protocol MovieListViewProtocol: AnyObject {
     var presenter: MovieListPresenterProtocol? { get set }
     
     func loadingFinished(with indicies: [IndexPath])
-    func hideActivity()
+    func removeActivity()
     func showActivity()
 }
 
@@ -27,7 +27,7 @@ protocol MovieListPresenterProtocol: AnyObject {
     func getMovies()
     func numberOfItemsIn(section: Int) -> Int
     func getItemAt(indexPath: IndexPath) -> Movie
-    func selectedItemAt(indexpath: IndexPath)
+    func isPageLoadingRequired() -> Bool
 }
 
 // Presenter to Interactor

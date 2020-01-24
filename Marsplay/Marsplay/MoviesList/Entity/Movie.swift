@@ -12,6 +12,7 @@ enum MovieType: String, Decodable {
     case movie
     case series
     case episode
+    case game
 }
 
 class Movie: Decodable {

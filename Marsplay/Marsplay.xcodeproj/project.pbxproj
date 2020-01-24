@@ -27,6 +27,8 @@
 		3CE93B9023DA9EE700AFD6A5 /* MovieListCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CE93B8F23DA9EE700AFD6A5 /* MovieListCollectionViewCell.swift */; };
 		3CE93B9323DAA59D00AFD6A5 /* Date+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CE93B9223DAA59D00AFD6A5 /* Date+Ext.swift */; };
 		3CE93B9523DAB30700AFD6A5 /* UIView+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CE93B9423DAB30700AFD6A5 /* UIView+Ext.swift */; };
+		3CE93B9723DADD9C00AFD6A5 /* MovieListCollectionFooterView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3CE93B9623DADD9C00AFD6A5 /* MovieListCollectionFooterView.xib */; };
+		3CE93B9923DADE3100AFD6A5 /* MovieListCollectionFooterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CE93B9823DADE3100AFD6A5 /* MovieListCollectionFooterView.swift */; };
 		56B201AEE01AF948775EECC9 /* Pods_Marsplay.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A7218253BDBA65B327FBD12 /* Pods_Marsplay.framework */; };
 		CF8EEB940C24B9D41DA8DC0C /* Pods_MarsplayTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4B5C324A6D25D68FB20B8382 /* Pods_MarsplayTests.framework */; };
 /* End PBXBuildFile section */
@@ -68,6 +70,8 @@
 		3CE93B8F23DA9EE700AFD6A5 /* MovieListCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieListCollectionViewCell.swift; sourceTree = "<group>"; };
 		3CE93B9223DAA59D00AFD6A5 /* Date+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+Ext.swift"; sourceTree = "<group>"; };
 		3CE93B9423DAB30700AFD6A5 /* UIView+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Ext.swift"; sourceTree = "<group>"; };
+		3CE93B9623DADD9C00AFD6A5 /* MovieListCollectionFooterView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MovieListCollectionFooterView.xib; sourceTree = "<group>"; };
+		3CE93B9823DADE3100AFD6A5 /* MovieListCollectionFooterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieListCollectionFooterView.swift; sourceTree = "<group>"; };
 		4B5C324A6D25D68FB20B8382 /* Pods_MarsplayTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MarsplayTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8ADEC1512C4C27C0C189A042 /* Pods-Marsplay.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Marsplay.debug.xcconfig"; path = "Target Support Files/Pods-Marsplay/Pods-Marsplay.debug.xcconfig"; sourceTree = "<group>"; };
 		8B51218304FB4F1DB4A2AAE6 /* Pods-Marsplay.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Marsplay.release.xcconfig"; path = "Target Support Files/Pods-Marsplay/Pods-Marsplay.release.xcconfig"; sourceTree = "<group>"; };
@@ -185,6 +189,8 @@
 				3C0939BD23D822D4008C2787 /* MoviesListViewController.swift */,
 				3CE93B8D23DA9EAD00AFD6A5 /* MovieListCollectionViewCell.xib */,
 				3CE93B8F23DA9EE700AFD6A5 /* MovieListCollectionViewCell.swift */,
+				3CE93B9623DADD9C00AFD6A5 /* MovieListCollectionFooterView.xib */,
+				3CE93B9823DADE3100AFD6A5 /* MovieListCollectionFooterView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -354,6 +360,7 @@
 				3C09399D23D818FE008C2787 /* Assets.xcassets in Resources */,
 				3C09399B23D818F9008C2787 /* Main.storyboard in Resources */,
 				3CE93B8E23DA9EAD00AFD6A5 /* MovieListCollectionViewCell.xib in Resources */,
+				3CE93B9723DADD9C00AFD6A5 /* MovieListCollectionFooterView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -435,6 +442,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3CE93B9923DADE3100AFD6A5 /* MovieListCollectionFooterView.swift in Sources */,
 				3CE93B9523DAB30700AFD6A5 /* UIView+Ext.swift in Sources */,
 				3C0939C423D82327008C2787 /* Movie.swift in Sources */,
 				3C0939C623D8235D008C2787 /* MoviesListRouter.swift in Sources */,

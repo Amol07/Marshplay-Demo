@@ -29,6 +29,8 @@ class MoviesListPresenter: MovieListPresenterProtocol {
     
     func getMovies() {
         guard !self.pageInfo.isApiCallInProgress, self.pageInfo.isNextAvailable else { return }
+        self.pageInfo.isApiCallInProgress = true
+        print(self.pageInfo.currentPage)
         self.interactor?.getMoviesListFor(page: self.pageInfo.currentPage)
     }
     
@@ -40,8 +42,8 @@ class MoviesListPresenter: MovieListPresenterProtocol {
         return self.moviesList[indexPath.item]
     }
     
-    func selectedItemAt(indexpath: IndexPath) {
-        //let movies = self.moviesList[indexpath.item]
+    func isPageLoadingRequired() -> Bool {
+        return self.pageInfo.isNextAvailable
     }
 }
 
@@ -51,6 +53,7 @@ extension MoviesListPresenter: MovieListInteractorOutputProtocol {
         
         guard response.isSuccessResponse, let movies = response.result, movies.count > 0 else {
             self.pageInfo.isNextAvailable = false
+            self.view?.removeActivity()
             return
         }
         self.pageInfo.isApiCallInProgress = false
@@ -65,6 +68,7 @@ extension MoviesListPresenter: MovieListInteractorOutputProtocol {
     }
     
     func failedWith(error: MarsplayError?) {
-        
+        self.pageInfo.isApiCallInProgress = false
+        self.view?.removeActivity()
     }
 }
