@@ -15,7 +15,7 @@ enum MovieType: String, Decodable {
 }
 
 class Movie: Decodable {
-    private static let dateFormat = DateFormatter()
+    private static let dateFormatter = DateFormatter()
     
     var title: String?
     var year: String?
@@ -33,8 +33,8 @@ class Movie: Decodable {
     private(set) var formattedDateString: String?
     var yearsAgo: String? {
         guard formattedDateString != nil else {
-            Movie.dateFormat.dateFormat = "yyyy"
-            if let year = self.year, let date = Movie.dateFormat.date(from: year) {
+            Movie.dateFormatter.dateFormat = "yyyy"
+            if let year = self.year, let date = Movie.dateFormatter.date(from: year) {
                 self.formattedDateString = date.timeAgo(since: date)
             } else {
                 self.formattedDateString = self.year

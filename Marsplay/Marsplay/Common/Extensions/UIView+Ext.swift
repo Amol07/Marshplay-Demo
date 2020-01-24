@@ -100,3 +100,30 @@ extension UICollectionView {
       return typedView
   }
 }
+
+import SDWebImage
+extension UIImageView {
+    
+    static var placeHolderImage: UIImage = #imageLiteral(resourceName: "Placeholder")
+    
+    func setImage(with url: String?, placeHolder: UIImage? = nil, completed: (() -> Void)? = nil) {
+        if let urlString = url {
+            self.sd_setImage(with: URL(string: urlString), placeholderImage: placeHolder) { (_, _, _, _) in
+                completed?()
+            }
+        } else {
+            self.image = placeHolder
+        }
+    }
+}
+
+extension UIApplication {
+    var statusBarOrientation: UIInterfaceOrientation? {
+        get {
+            guard let orientation = self.windows.first?.windowScene?.interfaceOrientation else {
+                return nil
+            }
+            return orientation
+        }
+    }
+}

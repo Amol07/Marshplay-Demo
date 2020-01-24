@@ -3,13 +3,12 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		3C09399423D818F9008C2787 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C09399323D818F9008C2787 /* AppDelegate.swift */; };
 		3C09399623D818F9008C2787 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C09399523D818F9008C2787 /* SceneDelegate.swift */; };
-		3C09399823D818F9008C2787 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C09399723D818F9008C2787 /* ViewController.swift */; };
 		3C09399B23D818F9008C2787 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3C09399923D818F9008C2787 /* Main.storyboard */; };
 		3C09399D23D818FE008C2787 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3C09399C23D818FE008C2787 /* Assets.xcassets */; };
 		3C0939A023D818FE008C2787 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3C09399E23D818FE008C2787 /* LaunchScreen.storyboard */; };
@@ -28,6 +27,8 @@
 		3CE93B9023DA9EE700AFD6A5 /* MovieListCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CE93B8F23DA9EE700AFD6A5 /* MovieListCollectionViewCell.swift */; };
 		3CE93B9323DAA59D00AFD6A5 /* Date+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CE93B9223DAA59D00AFD6A5 /* Date+Ext.swift */; };
 		3CE93B9523DAB30700AFD6A5 /* UIView+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CE93B9423DAB30700AFD6A5 /* UIView+Ext.swift */; };
+		56B201AEE01AF948775EECC9 /* Pods_Marsplay.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A7218253BDBA65B327FBD12 /* Pods_Marsplay.framework */; };
+		CF8EEB940C24B9D41DA8DC0C /* Pods_MarsplayTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4B5C324A6D25D68FB20B8382 /* Pods_MarsplayTests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -41,10 +42,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0A7218253BDBA65B327FBD12 /* Pods_Marsplay.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Marsplay.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		119B3E49E4D126D3A9069B40 /* Pods-MarsplayTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MarsplayTests.release.xcconfig"; path = "Target Support Files/Pods-MarsplayTests/Pods-MarsplayTests.release.xcconfig"; sourceTree = "<group>"; };
 		3C09399023D818F9008C2787 /* Marsplay.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Marsplay.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3C09399323D818F9008C2787 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3C09399523D818F9008C2787 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		3C09399723D818F9008C2787 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		3C09399A23D818F9008C2787 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		3C09399C23D818FE008C2787 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3C09399F23D818FE008C2787 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -66,6 +68,10 @@
 		3CE93B8F23DA9EE700AFD6A5 /* MovieListCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieListCollectionViewCell.swift; sourceTree = "<group>"; };
 		3CE93B9223DAA59D00AFD6A5 /* Date+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+Ext.swift"; sourceTree = "<group>"; };
 		3CE93B9423DAB30700AFD6A5 /* UIView+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Ext.swift"; sourceTree = "<group>"; };
+		4B5C324A6D25D68FB20B8382 /* Pods_MarsplayTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MarsplayTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8ADEC1512C4C27C0C189A042 /* Pods-Marsplay.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Marsplay.debug.xcconfig"; path = "Target Support Files/Pods-Marsplay/Pods-Marsplay.debug.xcconfig"; sourceTree = "<group>"; };
+		8B51218304FB4F1DB4A2AAE6 /* Pods-Marsplay.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Marsplay.release.xcconfig"; path = "Target Support Files/Pods-Marsplay/Pods-Marsplay.release.xcconfig"; sourceTree = "<group>"; };
+		D3E261C051170F56C8DD0BED /* Pods-MarsplayTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MarsplayTests.debug.xcconfig"; path = "Target Support Files/Pods-MarsplayTests/Pods-MarsplayTests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,6 +79,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				56B201AEE01AF948775EECC9 /* Pods_Marsplay.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -80,18 +87,32 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CF8EEB940C24B9D41DA8DC0C /* Pods_MarsplayTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		38FA65376AAA4A5FC7EF935E /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				8ADEC1512C4C27C0C189A042 /* Pods-Marsplay.debug.xcconfig */,
+				8B51218304FB4F1DB4A2AAE6 /* Pods-Marsplay.release.xcconfig */,
+				D3E261C051170F56C8DD0BED /* Pods-MarsplayTests.debug.xcconfig */,
+				119B3E49E4D126D3A9069B40 /* Pods-MarsplayTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		3C09398723D818F8008C2787 = {
 			isa = PBXGroup;
 			children = (
 				3C09399223D818F9008C2787 /* Marsplay */,
 				3C0939A923D818FE008C2787 /* MarsplayTests */,
 				3C09399123D818F9008C2787 /* Products */,
+				38FA65376AAA4A5FC7EF935E /* Pods */,
+				CF4B56F3CDE590B468C7C39A /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -111,7 +132,6 @@
 				3C0939B623D82222008C2787 /* MoviesList */,
 				3C09399323D818F9008C2787 /* AppDelegate.swift */,
 				3C09399523D818F9008C2787 /* SceneDelegate.swift */,
-				3C09399723D818F9008C2787 /* ViewController.swift */,
 				3C09399923D818F9008C2787 /* Main.storyboard */,
 				3C09399C23D818FE008C2787 /* Assets.xcassets */,
 				3C09399E23D818FE008C2787 /* LaunchScreen.storyboard */,
@@ -237,6 +257,15 @@
 			path = Extensions;
 			sourceTree = "<group>";
 		};
+		CF4B56F3CDE590B468C7C39A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0A7218253BDBA65B327FBD12 /* Pods_Marsplay.framework */,
+				4B5C324A6D25D68FB20B8382 /* Pods_MarsplayTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -244,9 +273,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 3C0939AF23D818FE008C2787 /* Build configuration list for PBXNativeTarget "Marsplay" */;
 			buildPhases = (
+				C216005F7F66C3DD19B14EB2 /* [CP] Check Pods Manifest.lock */,
 				3C09398C23D818F8008C2787 /* Sources */,
 				3C09398D23D818F8008C2787 /* Frameworks */,
 				3C09398E23D818F8008C2787 /* Resources */,
+				DC0B904B508E75A5C3F8F541 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -261,6 +292,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 3C0939B223D818FE008C2787 /* Build configuration list for PBXNativeTarget "MarsplayTests" */;
 			buildPhases = (
+				28DFEFE851F5D12EA083EA8D /* [CP] Check Pods Manifest.lock */,
 				3C0939A223D818FE008C2787 /* Sources */,
 				3C0939A323D818FE008C2787 /* Frameworks */,
 				3C0939A423D818FE008C2787 /* Resources */,
@@ -334,6 +366,70 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		28DFEFE851F5D12EA083EA8D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MarsplayTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C216005F7F66C3DD19B14EB2 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Marsplay-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DC0B904B508E75A5C3F8F541 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Marsplay/Pods-Marsplay-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Marsplay/Pods-Marsplay-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Marsplay/Pods-Marsplay-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		3C09398C23D818F8008C2787 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -343,7 +439,6 @@
 				3C0939C423D82327008C2787 /* Movie.swift in Sources */,
 				3C0939C623D8235D008C2787 /* MoviesListRouter.swift in Sources */,
 				3C0939CB23D83165008C2787 /* MoviesListFetcher.swift in Sources */,
-				3C09399823D818F9008C2787 /* ViewController.swift in Sources */,
 				3C09399423D818F9008C2787 /* AppDelegate.swift in Sources */,
 				3C09399623D818F9008C2787 /* SceneDelegate.swift in Sources */,
 				3C0939BE23D822D4008C2787 /* MoviesListViewController.swift in Sources */,
@@ -512,6 +607,7 @@
 		};
 		3C0939B023D818FE008C2787 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8ADEC1512C4C27C0C189A042 /* Pods-Marsplay.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -529,6 +625,7 @@
 		};
 		3C0939B123D818FE008C2787 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8B51218304FB4F1DB4A2AAE6 /* Pods-Marsplay.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -546,6 +643,7 @@
 		};
 		3C0939B323D818FE008C2787 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D3E261C051170F56C8DD0BED /* Pods-MarsplayTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -567,6 +665,7 @@
 		};
 		3C0939B423D818FE008C2787 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 119B3E49E4D126D3A9069B40 /* Pods-MarsplayTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";

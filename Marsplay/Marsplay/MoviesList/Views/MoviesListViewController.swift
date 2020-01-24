@@ -15,12 +15,22 @@ class MoviesListViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.title = "Movies"
         self.registerCells()
+         self.configureFlowLayout()
         self.presenter?.viewDidLoad()
     }
     
     private func registerCells() {
         self.collectionView.register(cellType: MovieListCollectionViewCell.self)
+    }
+    
+    private func configureFlowLayout() {
+        if let layout = collectionView?.collectionViewLayout as? UICollectionViewFlowLayout{
+            layout.minimumLineSpacing = 10
+            layout.minimumInteritemSpacing = 10
+            layout.sectionInset = UIEdgeInsets(top: 10, left: 10, bottom: 10, right: 10)
+        }
     }
 }
 
@@ -40,6 +50,24 @@ extension MoviesListViewController: UICollectionViewDataSource {
 
 extension MoviesListViewController: UICollectionViewDelegate {
     
+}
+
+extension MoviesListViewController: UICollectionViewDelegateFlowLayout {
+    
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
+        let flowayout = collectionViewLayout as? UICollectionViewFlowLayout
+        let column: CGFloat
+        if UIApplication.shared.statusBarOrientation == .portrait || UIApplication.shared.statusBarOrientation == .portraitUpsideDown {
+            column = 2.0
+        } else {
+            column = 3.0
+        }
+        var minimumInteritemSpacing = flowayout?.minimumInteritemSpacing ?? 0.0
+        minimumInteritemSpacing = minimumInteritemSpacing * (column - 1.0)
+        let space = (minimumInteritemSpacing) + (flowayout?.sectionInset.left ?? 0.0) + (flowayout?.sectionInset.right ?? 0.0)
+        let size = (collectionView.frame.size.width - space) / column
+        return CGSize(width: size, height: size*1.67)
+    }
 }
 
 extension MoviesListViewController: MovieListViewProtocol {
