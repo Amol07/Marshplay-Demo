@@ -1,4 +1,4 @@
 # Marshplay-Demo
 OMDB iOS Client App
 
-This demo was built in Viper Architecture as a part of iOS assignment.
+This demo was built using Viper Architecture as a part of iOS assignment.
