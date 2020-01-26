@@ -127,3 +127,18 @@ extension UIApplication {
         }
     }
 }
+
+typealias UIAlertControllerHandler = ( _ alertController: UIAlertController, _ selectedIndex: Int ) -> Void
+
+extension UIViewController {
+    func showAlert(title: String, message: String, buttonTitles: [String] = ["OK"], handler: UIAlertControllerHandler?) {
+        let controller = UIAlertController.init(title: title, message: message, preferredStyle: .alert)
+        let actionHandler = { action  -> Void in
+            handler?( controller, controller.actions.firstIndex(of: action ) ?? -1 )
+        }
+        for title in buttonTitles[ 0..<buttonTitles.count ] {
+            controller.addAction( UIAlertAction( title: title, style: .default, handler: actionHandler))
+        }
+        self.present(controller, animated: true, completion: nil)
+    }
+}

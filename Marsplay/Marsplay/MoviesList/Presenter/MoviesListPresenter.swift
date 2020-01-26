@@ -45,6 +45,10 @@ class MoviesListPresenter: MovieListPresenterProtocol {
     func isPageLoadingRequired() -> Bool {
         return self.pageInfo.isNextAvailable
     }
+    
+    func didSelectMovie(at indexPath: IndexPath) {
+        self.router?.showMovieDetailScreen(from: self.view, forMovie: self.getItemAt(indexPath: indexPath))
+    }
 }
 
 extension MoviesListPresenter: MovieListInteractorOutputProtocol {
@@ -69,6 +73,6 @@ extension MoviesListPresenter: MovieListInteractorOutputProtocol {
     
     func failedWith(error: MarsplayError?) {
         self.pageInfo.isApiCallInProgress = false
-        self.view?.removeActivity()
+        self.view?.failed(withError: error)
     }
 }

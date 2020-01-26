@@ -70,6 +70,10 @@ extension MoviesListViewController: UICollectionViewDelegate {
         guard let presenter = self.presenter else { return CGSize.zero }
         return presenter.isPageLoadingRequired() ? CGSize(width: self.collectionView.frame.width, height: 50) : CGSize.zero
     }
+    
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        self.presenter?.didSelectMovie(at: indexPath)
+    }
 }
 
 extension MoviesListViewController: UICollectionViewDelegateFlowLayout {
@@ -94,14 +98,17 @@ extension MoviesListViewController: MovieListViewProtocol {
     
     func loadingFinished(with indicies: [IndexPath]) {
         self.collectionView.insertItems(at: indicies)
+        self.removeActivity()
     }
     
     func removeActivity() {
         // remove activity
-        
+        self.collectionView.collectionViewLayout.invalidateLayout()
     }
     
-    func showActivity() {
-        // display activity
+    func failed(withError error: MarsplayError?) {
+        self.removeActivity()
+        self.showAlert(title: "Error", message: error?.errorDescription ?? "Something went wrong. Please try again later.") { (alert, index) in
+        }
     }
 }

@@ -7,14 +7,15 @@
 //
 
 import Foundation
+import UIKit
 
 // Presenter to View
 protocol MovieListViewProtocol: AnyObject {
     var presenter: MovieListPresenterProtocol? { get set }
     
     func loadingFinished(with indicies: [IndexPath])
+    func failed(withError error: MarsplayError?)
     func removeActivity()
-    func showActivity()
 }
 
 // View to Presenter
@@ -27,6 +28,7 @@ protocol MovieListPresenterProtocol: AnyObject {
     func getMovies()
     func numberOfItemsIn(section: Int) -> Int
     func getItemAt(indexPath: IndexPath) -> Movie
+    func didSelectMovie(at indexPath: IndexPath)
     func isPageLoadingRequired() -> Bool
 }
 
@@ -59,7 +61,9 @@ protocol MovieListFetcherOutputProtocol: AnyObject {
 
 // Presenter to Router
 protocol MovieListRouterProtocol {
-    
+    static func createMovieListModule() -> UIViewController
+    static func createMovieDetailModule(for movie: Movie) -> UIViewController
+    func showMovieDetailScreen(from view: MovieListViewProtocol?, forMovie movie: Movie)
 }
 
 

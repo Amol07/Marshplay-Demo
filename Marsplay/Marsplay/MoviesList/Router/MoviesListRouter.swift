@@ -35,4 +35,20 @@ class MoviesListRouter: MovieListRouterProtocol {
         return UIViewController()
     }
     
+    static func createMovieDetailModule(for movie: Movie) -> UIViewController {
+        guard let view = mainStoryboard.instantiateViewController(withIdentifier: "MovieDetailsViewController") as? MovieDetailsViewController else {
+            return MovieDetailsViewController()
+        }
+        let presenter: MovieDetailsPresenterProtocol = MovieDetailsPresenter(movie: movie)
+        view.presenter = presenter
+        presenter.view = view
+        return view
+    }
+    
+    func showMovieDetailScreen(from view: MovieListViewProtocol?, forMovie movie: Movie) {
+        let detailVc = type(of: self).createMovieDetailModule(for: movie)
+        if let view = view as? UIViewController {
+            view.navigationController?.pushViewController(detailVc, animated: true)
+        }
+    }
 }
