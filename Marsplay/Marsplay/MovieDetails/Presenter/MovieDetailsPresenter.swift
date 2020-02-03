@@ -10,7 +10,7 @@ import Foundation
 
 class MovieDetailsPresenter: MovieDetailsPresenterProtocol {
     
-    var view: MovieDetailsViewProtocol?
+    weak var view: MovieDetailsViewProtocol?
     var movie: Movie?
     
     required init(movie: Movie) {
